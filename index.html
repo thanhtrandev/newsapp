@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./grid.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title>Ứng dụng xem tin tức</title>
+</head>
+<body>
+	<div>
+		<!-- Header news -->
+		<div class="news-header">
+			<div class="row">
+				<h1>Thời báo thế giới</h1>
+				<img width="75px" height="75px" src="./search-icon.png" alt="search news" id="search-icon">
+			</div>
+		</div>
+
+		<!-- Value Gnew -->
+		<div class="grid wide">
+			<div id="news-block">
+			</div>
+		</div>
+
+		<div id="overlay-container">
+			<div id="search-val">
+				
+				<!-- Search box -->
+				<div class="search-box row">
+					<label class="search-box-items" for="search-keyword">Từ khóa</label>
+					<div class="">	
+						<input id="keyword-input" class="search-box-items" type="text">
+					</div>
+					<div class="">
+						<input id="search-btn" class="search-box-items" type="button" value="Tìm kiếm">
+					</div>
+				</div>
+				<br>
+				
+				<!-- Time search  -->
+				<div>
+					<div class="row">
+						<label class="col l-6" for="start-date">Từ ngày</label>
+						<input class="col l-6" type="date" id="start-date">
+					</div><br>
+
+					<div class="row">
+						<label class="col l-6" for="end-date">Đến ngày</label>
+						<input class="col l-6" type="date" id="end-date">
+					</div><br>
+				</div>
+				</div> 		
+			</div> 
+   		</div>	
+
+		   	<!-- Loading -->
+		   	<div id="preloader">
+				<img src="./loading2.gif">
+			</div>
+		
+	</div>
+
+	
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+	<script language="javascript" type="text/javascript" src="./news.js"></script>
+</body>
+</html>
